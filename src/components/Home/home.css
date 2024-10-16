@@ -1,0 +1,178 @@
+
+.bg-container {
+  background-image: url(./bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px;
+    height: 630px;
+    position: relative; 
+  }
+  
+
+  .slogan {
+    margin-top: 120px;
+    margin-left: 150px;
+  }
+  
+  .slogan h1,
+  .slogan h3 {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slogan h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    letter-spacing: 2px;
+  }
+  
+  .slogan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .button {
+    background-color: darkgreen;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  
+  .button:hover {
+    background-color: rgb(0, 74, 0);
+    transform: scale(1.05);
+  }
+  
+ 
+  .weather-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .weather-container h1,
+  .weather-container h2,
+  .weather-container p {
+    color: white;
+  }
+  
+  .weather-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .weather-container button {
+    padding: 10px 20px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .weather-container button:hover {
+    background-color: rgb(0, 74, 0);
+    transform: scale(1.05);
+  }
+  .weather-container h1{
+      font-size: 30px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .bg-container {
+      padding: 10px;
+      height: auto;
+      background-color: #cce7ff; 
+      align-items: center; 
+    }
+  
+    .slogan {
+      margin: 0;
+      text-align: center;
+    }
+  
+    .slogan h1 {
+      font-size: 2rem;
+      margin: 5px 0;
+    }
+  
+    .slogan h3 {
+      font-size: 1.2rem;
+    }
+  
+    .button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 20px;
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  
+    
+    .weather-container {
+      position: relative; 
+      top: auto; 
+      right: auto; 
+      width: 100%; 
+      margin-top: 20px; 
+      margin-left: 0;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slogan {
+      margin-bottom: 100px;
+    }
+  
+    .slogan h1 {
+      font-size: 1.9rem;
+    }
+  
+    .slogan h3 {
+      font-size: 1.4rem;
+    }
+  
+    .button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      border-radius: 15px;
+    }
+  
+    .bg-container{
+      height: 95vh;
+    }
+  
+    .weather-container {
+      margin-top: 15px;
+      padding: 15px;
+      width: 90%; 
+    }
+  }
+  

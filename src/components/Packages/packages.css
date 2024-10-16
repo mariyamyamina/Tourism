@@ -1,0 +1,122 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General package section styling */
+.package {
+    background-color: whitesmoke;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.package h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.package p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Container for package cards */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* For wrapping items on smaller screens */
+    padding: 0 20px;
+}
+
+/* Individual package box styling */
+.package-box {
+    height: 500px;
+    width: 320px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hover effect on package box */
+.package-box:hover {
+    transform: translateY(-10px); /* Lifts box on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Adds depth with shadow */
+}
+
+/* Package image styling */
+.package-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.package-box:hover img {
+    transform: scale(1.05); /* Zoom effect on image hover */
+}
+
+/* Package text and button styling */
+.package-box h3 {
+    margin: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.package-box button{
+    margin: 10px;
+}
+
+.package-box p {
+    margin: 0 20px 20px 20px;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Button styling */
+.package-box button {
+    background-color: rgb(46, 46, 255);
+    height: 45px;
+    width: 120px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Button hover effect */
+.package-box button:hover {
+    background-color: darkblue;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .package-box {
+        width: 90%; /* Take up most of the screen on mobile */
+        height: auto;
+    }
+
+    .package-box img {
+        height: 200px; /* Reduce image height for smaller screens */
+    }
+}

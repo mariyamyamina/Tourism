@@ -1,0 +1,19 @@
+.video {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.video video {
+    width: 100%; /* Make the video responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Set a maximum width for larger screens */
+}
+
+/* Additional styles for mobile view (optional) */
+@media (max-width: 768px) {
+    .video {
+        margin-top: 20px; /* Adjust margin for mobile */
+        margin-bottom: 40px; /* Adjust margin for mobile */
+    }
+}

@@ -1,0 +1,36 @@
+.footer {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+    padding: 20px; 
+}
+
+.footer-box {
+    padding: 20px;
+    height: auto;
+    width: 250px;
+}
+
+.footer-box h3 {
+    color: darkgreen;
+}
+
+.footer-box p {
+    color: gray;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .footer-box {
+        width: 80%; 
+        max-width: 300px; 
+        text-align: center; 
+    }
+}
